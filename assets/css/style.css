@@ -16,6 +16,10 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -71,7 +75,7 @@ h4 {
     padding: 0 30px 30px;
     float: none;
 }
-
+.history-heading,
 .section-heading {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -260,4 +264,73 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+/* ------------------Skills---------------*/
+
+.progress {
+    height: 25px;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.progress-type {
+    position: absolute;
+    font-weight: 400;
+    color: #fafafa;
+    left: 0px;
+    background-color: rgba(25,25,25,0.2);
+    padding: 3px 30px 4px 10px;
+}
+
+.progress-wrapper {
+    margin: 40px 20px;
+}
+
+/* ------------------History--------------*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 4em 2em 0em 2em;
+    color: #fafafa;
+    border-left: solid 1px;
+}
+
+.timeline-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top:3em;
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    position:absolute;
+    display: block;
+    top: 3em;
+    left: -6px;
+    border-radius: 12px;
+    content: "";
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 20px;
 }
